@@ -1,7 +1,8 @@
 import axios from 'axios';
 
 // Base URL for backend API
-const BASE_URL = 'http://localhost:8080/api/sudoku';
+//const BASE_URL = 'http://localhost:8080/api/sudoku';
+const BASE_URL = process.env.REACT_APP_API_URL || 'http://localhost:8080/api/sudoku';
 
 // Create axios instance with default config
 const api = axios.create({
